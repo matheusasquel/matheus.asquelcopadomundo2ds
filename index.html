@@ -1,240 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Copa do Mundo — História Completa, Edição por Edição</title>
-<meta name="description" content="A história da Copa do Mundo FIFA de 1930 a 2022: campeões, finais, troféu, recordes de cartões e ranking histórico das seleções.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanaque das Copas do Mundo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ============ HEADER / CLASSIC TOP MENU ============ -->
-<header class="site-header" id="topo">
-  <div class="header-inner">
-    <a href="#topo" class="brand">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 40 40" width="32" height="32">
-          <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
-          <path d="M20 6 L26 12 L23 19 L17 19 L14 12 Z" fill="currentColor"/>
-          <path d="M8 16 L14 12 M32 16 L26 12 M14 28 L17 19 M26 28 L23 19 M8 16 L11 25 L14 28 M32 16 L29 25 L26 28" fill="none" stroke="currentColor" stroke-width="1.5"/>
-        </svg>
-      </span>
-      <span class="brand-text">COPA&nbsp;DO&nbsp;MUNDO<small>história&nbsp;1930–2022</small></span>
-    </a>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="site-logo">
+                <span>🏆 Mundiais</span>FIFA
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#estatisticas" class="nav-link">Estatísticas</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Anos ▼</a>
+                        <ul class="dropdown-menu" id="dropdown-anos">
+                            </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menu">
-      <span></span><span></span><span></span>
-    </button>
+    <main class="main-content">
+        
+        <section id="inicio" class="content-section">
+            <h1>História da Copa do Mundo da FIFA</h1>
+            <p>A Copa do Mundo da FIFA, popularmente conhecida como Copa ou Mundial, é uma competição internacional de futebol entre seleções masculinas organizada pela Fédération Internationale de Football Association (FIFA). Ocorre a cada quatro anos, com exceção de 1942 e 1946, quando foi cancelada devido aos reflexos da Segunda Guerra Mundial.</p>
+            
+            <p>Instituída em 1928 sob a liderança do então presidente da FIFA, Jules Rimet, o torneio abriu as portas para a globalização do esporte mais popular do planeta. A primeira edição ocorreu em 1930 no Uruguai, país escolhido como sede por ser o atual bicampeão olímpico e celebrar o centenário de sua independência.</p>
 
-    <nav class="primary-nav" id="primaryNav">
-      <ul>
-        <li><a href="#topo" class="nav-link">Início</a></li>
-        <li><a href="#sobre" class="nav-link">Sobre a Copa</a></li>
-        <li class="has-dropdown">
-          <button class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">Edições <span class="caret">▾</span></button>
-          <div class="dropdown-panel" id="dropdownPanel">
-            <div class="dropdown-grid" id="decadeDropdownGrid"><!-- preenchido via JS --></div>
-          </div>
-        </li>
-        <li><a href="#trofeu" class="nav-link">Troféu</a></li>
-        <li><a href="#recordes" class="nav-link">Recordes</a></li>
-        <li><a href="#ranking" class="nav-link">Ranking</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+            <div class="history-grid">
+                <div class="history-card">
+                    <h3>Antes da Segunda Guerra</h3>
+                    <p>Devido ao sucesso do futebol nos Jogos Olímpicos, a FIFA decidiu criar um campeonato próprio. Na edição inaugural em 1930, apenas 13 seleções participaram, e os donos da casa (Uruguai) sagraram-se os primeiros campeões mundiais ao vencer a Argentina.</p>
+                </div>
+                <div class="history-card">
+                    <h3>O Pós-Guerra e o Maracanaço</h3>
+                    <p>Em 1950, o torneio retornou em solo brasileiro. Foi marcado pelo retorno da Inglaterra à FIFA e pelo histórico "Maracanaço", onde o Uruguai surpreendeu o mundo ao vencer o Brasil por 2 a 1 na última partida dentro de um Maracanã lotado.</p>
+                </div>
+                <div class="history-card">
+                    <h3>Era das Expansões</h3>
+                    <p>Visando dar mais oportunidades para seleções da África, Ásia e América do Norte, o torneio expandiu para 24 equipes em 1982 e para 32 em 1998. A partir de 2026, a competição assume um formato robusto com 48 seleções nacionais.</p>
+                </div>
+            </div>
 
-<main>
+            <blockquote class="trophy-box">
+                <strong>A Evolução do Troféu:</strong> De 1930 a 1970, os campeões erguiam a Taça Jules Rimet. O Brasil conquistou o direito de guardá-la em definitivo após o tricampeonato em 1970, mas o troféu foi roubado em 1983. Desde 1974, utiliza-se a atual Taça da Copa do Mundo, feita de ouro maciço de 18 quilates, desenhada por Silvio Gazzaniga, que permanece sob posse definitiva da FIFA.
+            </blockquote>
+        </section>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="hero-lines" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <p class="hero-eyebrow">FIFA · 1930 — 2022</p>
-      <h1 class="hero-title">Noventa e quatro anos de<br>Copa do&nbsp;Mundo</h1>
-      <p class="hero-sub">Da bola dupla do Uruguai em 1930 aos pênaltis do Catar em 2022: a trajetória completa do torneio mais disputado do futebol, edição por edição.</p>
-      <a href="#edicoes" class="hero-cta">Explorar as 22 edições ↓</a>
-    </div>
-    <div class="scoreboard" role="group" aria-label="Números da Copa do Mundo">
-      <div class="scoreboard-item">
-        <span class="scoreboard-number">22</span>
-        <span class="scoreboard-label">Edições disputadas</span>
-      </div>
-      <div class="scoreboard-item">
-        <span class="scoreboard-number">8</span>
-        <span class="scoreboard-label">Seleções campeãs</span>
-      </div>
-      <div class="scoreboard-item">
-        <span class="scoreboard-number">5</span>
-        <span class="scoreboard-label">Títulos do Brasil</span>
-      </div>
-      <div class="scoreboard-item">
-        <span class="scoreboard-number">84</span>
-        <span class="scoreboard-label">Seleções na história</span>
-      </div>
-    </div>
-  </section>
+        <section id="estatisticas" class="content-section">
+            <h2>Resumo Estatístico das Edições (1930–2022)</h2>
+            <p class="table-note">*Nota: Cartões amarelos e vermelhos físicos só foram introduzidos em 1970. Antes disso, as expulsões eram comunicadas verbalmente pelo árbitro.</p>
+            
+            <div class="table-container">
+                <table id="tabela-estatisticas">
+                    <thead>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Sede</th>
+                            <th>Campeão</th>
+                            <th>Vice-Campeão</th>
+                            <th>Gols</th>
+                            <th>Cartões Amarelos</th>
+                            <th>Cartões Vermelhos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+        </section>
 
-  <!-- ============ SOBRE A COPA ============ -->
-  <section class="section section-chalk" id="sobre">
-    <div class="section-inner">
-      <p class="section-eyebrow">Sobre a competição</p>
-      <h2 class="section-title">O que é a Copa do Mundo</h2>
-      <p class="lede">A Copa do Mundo FIFA, popularmente conhecida apenas como Copa ou Mundial, é a principal competição internacional de futebol entre seleções masculinas, organizada pela FIFA (Fédération Internationale de Football Association) desde 1930. Acontece a cada quatro anos — com a única exceção de 1942 e 1946, suspensas pela Segunda Guerra Mundial.</p>
+        <section id="edicoes-detalhadas" class="content-section">
+            <h2>Histórico Detalhado das Finais</h2>
+            <div id="container-finais">
+                </div>
+        </section>
 
-      <p>Apenas oito seleções já levantaram a taça em 94 anos de história, e todas vêm de apenas dois continentes: Europa (Alemanha, Espanha, França, Inglaterra e Itália) e América do Sul (Argentina, Brasil e Uruguai). O Brasil é a única seleção a disputar todas as edições do torneio e o maior campeão isolado, com cinco títulos — 1958, 1962, 1970, 1994 e 2002. Foi também o primeiro tricampeão mundial, conquista que lhe deu a posse definitiva da antiga Taça Jules Rimet, com Pelé como protagonista.</p>
+    </main>
 
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="timeline-year">1928</span>
-          <div>
-            <h3>Antes da Segunda Guerra</h3>
-            <p>Animada pelo sucesso do futebol nos Jogos Olímpicos, a FIFA, sob a presidência de Jules Rimet, decidiu em seu Congresso de Amsterdã, em 28 de maio de 1928, criar um campeonato mundial próprio, independente das Olimpíadas. O Uruguai, então bicampeão olímpico e às vésperas do centenário de sua independência, foi escolhido para sediar e venceu a primeira edição, em 1930.</p>
-          </div>
-        </article>
+    <footer class="site-footer">
+        <p>&copy; 2026 Almanaque Histórico das Copas do Mundo. Desenvolvido com HTML, CSS e JavaScript.</p>
+    </footer>
 
-        <article class="timeline-item">
-          <span class="timeline-year">1950</span>
-          <div>
-            <h3>Depois da Segunda Guerra</h3>
-            <p>A Copa de 1950, no Brasil, marcou o retorno da Inglaterra — que havia se afastado da FIFA em 1920 e só voltou em 1946 — e também do Uruguai, ausente nas duas edições anteriores. Os uruguaios voltaram com tudo: bateram o Brasil por 2–1 numa final disputada no Maracanã, resultado que entrou para a história como o "Maracanaço".</p>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <span class="timeline-year">1982 / 1998</span>
-          <div>
-            <h3>Expansão para 32 seleções</h3>
-            <p>O número de seleções participantes subiu de 16 para 24 em 1982, e para 32 em 1998, abrindo mais vagas para África, Ásia e América do Norte. Seleções dessas confederações passaram a render boas campanhas — México (quartas, 1986), Camarões (quartas, 1990), Senegal e Estados Unidos (quartas, 2002), Coreia do Sul (quarto lugar, 2002), Gana (quartas, 2010), Costa Rica (quartas, 2014) e Marrocos (quarto lugar, 2022). Ainda assim, europeus e sul-americanos continuaram dominando as fases decisivas: foram os únicos presentes nas quartas de final de 1994, 1998, 2006 e 2018, e os únicos finalistas de toda a história do torneio.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <span class="timeline-year">2013 / 2026</span>
-          <div>
-            <h3>Expansão para 48 seleções</h3>
-            <p>Em outubro de 2013, o então presidente da FIFA Joseph Blatter levantou a ideia de ampliar ainda mais o torneio, defendendo publicamente mais espaço para as confederações africana e asiática. O novo formato, com 48 seleções nacionais disputando o torneio por cerca de um mês, passa a valer a partir da edição de 2026.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TROFÉU ============ -->
-  <section class="section section-pitch" id="trofeu">
-    <div class="section-inner trofeu-grid">
-      <div class="trofeu-text">
-        <p class="section-eyebrow">A taça</p>
-        <h2 class="section-title">Duas taças, uma história</h2>
-        <p>A taça atual da Copa do Mundo é feita de ouro maciço de 18 quilates, mede 36,8&nbsp;cm de altura e pesa 6,175&nbsp;kg — avaliada em cerca de US$&nbsp;850&nbsp;mil. É oca por dentro e nunca pertence definitivamente a nenhuma seleção: fica sempre sob a posse permanente da FIFA, que entrega apenas réplicas banhadas a ouro aos campeões.</p>
-        <p>Desenhada pelo escultor italiano Silvio Gazzaniga e adotada em 1974, a peça representa duas figuras humanas erguendo o globo terrestre numa espiral ascendente — uma alusão ao esforço atlético e à glória da vitória.</p>
-        <p>Antes dela, de 1930 a 1970, o trófeu em disputa era a Taça Jules Rimet. As regras da época previam que a seleção que vencesse o torneio três vezes ficaria com ela em definitivo — o que aconteceu com o Brasil em 1970. A taça, porém, foi roubada em 1983 e nunca recuperada.</p>
-      </div>
-      <div class="trofeu-visual" aria-hidden="true">
-        <svg viewBox="0 0 220 280" class="trophy-svg">
-          <ellipse cx="110" cy="260" rx="70" ry="12" fill="var(--color-gold)" opacity="0.15"/>
-          <rect x="70" y="230" width="80" height="20" rx="3" fill="var(--color-gold)"/>
-          <rect x="90" y="200" width="40" height="34" fill="var(--color-gold)"/>
-          <path d="M70 200 C70 140 80 120 110 120 C140 120 150 140 150 200 Z" fill="var(--color-gold-light)"/>
-          <path d="M70 200 C40 195 30 160 38 120 C44 130 56 138 70 140 Z" fill="var(--color-gold)"/>
-          <path d="M150 200 C180 195 190 160 182 120 C176 130 164 138 150 140 Z" fill="var(--color-gold)"/>
-          <path d="M110 120 C92 120 84 95 90 70 C95 80 102 86 110 86 C118 86 125 80 130 70 C136 95 128 120 110 120 Z" fill="var(--color-gold-light)"/>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ EDIÇÕES POR ANO ============ -->
-  <section class="section section-chalk" id="edicoes">
-    <div class="section-inner">
-      <p class="section-eyebrow">Edição por edição</p>
-      <h2 class="section-title">As 22 Copas do Mundo, década a década</h2>
-      <p class="lede">Cada cartão abaixo resume a final daquele ano e mostra os cartões amarelos e vermelhos realmente distribuídos na edição — o critério oficial só passou a existir a partir de 1970. Use os filtros para saltar direto para uma década, ou clique em qualquer ano para abrir os detalhes da final.</p>
-
-      <div class="decade-filters" id="decadeFilters" role="group" aria-label="Filtrar por década">
-        <!-- preenchido via JS -->
-      </div>
-
-      <div class="editions-grid" id="editionsGrid">
-        <!-- preenchido via JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ RECORDES DE CARTÕES ============ -->
-  <section class="section section-pitch" id="recordes">
-    <div class="section-inner">
-      <p class="section-eyebrow">Disciplina em campo</p>
-      <h2 class="section-title">Recordes de cartões</h2>
-      <p class="lede light">Os cartões amarelo e vermelho só foram oficialmente introduzidos na Copa de 1970 — antes disso, árbitros expulsavam jogadores apenas verbalmente.</p>
-
-      <div class="record-cards">
-        <article class="record-card">
-          <span class="chip chip-yellow" aria-hidden="true"></span>
-          <h3>Mais amarelos da história</h3>
-          <p><strong>Argentina</strong> — mais de 120 cartões amarelos acumulados em todas as edições, o maior total entre todas as seleções.</p>
-        </article>
-        <article class="record-card">
-          <span class="chip chip-red" aria-hidden="true"></span>
-          <h3>Mais vermelhos da história</h3>
-          <p><strong>Brasil</strong> — 11 expulsões no total, à frente da Argentina, em segundo lugar com 10.</p>
-        </article>
-        <article class="record-card">
-          <span class="chip chip-double" aria-hidden="true"></span>
-          <h3>O jogo mais violento</h3>
-          <p>Portugal 1 x 0 Holanda, em 2006 — apelidada de <strong>"Batalha de Nuremberg"</strong>. O árbitro Valentin Ivanov mostrou 16 cartões amarelos e 4 vermelhos numa única partida.</p>
-        </article>
-        <article class="record-card">
-          <span class="chip chip-yellow" aria-hidden="true"></span>
-          <h3>Mais cartões em 2022</h3>
-          <p>Holanda x Argentina, nas quartas de final do Catar, somou <strong>18 cartões amarelos</strong> — o recorde daquela edição.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ RANKING HISTÓRICO ============ -->
-  <section class="section section-chalk" id="ranking">
-    <div class="section-inner">
-      <p class="section-eyebrow">Desempenho geral · 1930–2022</p>
-      <h2 class="section-title">Ranking histórico das seleções</h2>
-      <p class="lede">As dez seleções com o melhor desempenho acumulado em todas as edições da Copa do Mundo. Clique em qualquer cabeçalho da tabela para reordenar.</p>
-
-      <div class="table-wrap">
-        <table class="ranking-table" id="rankingTable">
-          <thead>
-            <tr>
-              <th data-key="pos">#</th>
-              <th data-key="team">Seleção</th>
-              <th data-key="apps">Participações</th>
-              <th data-key="games">Jogos</th>
-              <th data-key="wins">V</th>
-              <th data-key="draws">E</th>
-              <th data-key="losses">D</th>
-              <th data-key="goals">Gols</th>
-            </tr>
-          </thead>
-          <tbody id="rankingBody">
-            <!-- preenchido via JS -->
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="section-inner footer-inner">
-    <p>Dados consolidados a partir de estatísticas históricas da FIFA e da imprensa esportiva. Site produzido para fins informativos e educativos.</p>
-    <a href="#topo" class="back-to-top">Voltar ao topo ↑</a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+    <script href="script.js" src="script.js"></script>
 </body>
 </html>
