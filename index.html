@@ -3,94 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almanaque das Copas do Mundo</title>
+    <title>Copa do Mundo FIFA (1930–2022)</title>
+
+    <meta name="description" content="História completa da Copa do Mundo FIFA de 1930 até 2022. Campeões, finais, estatísticas, troféus e linha do tempo.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="header-container">
-            <div class="site-logo">
-                <span>🏆 Mundiais</span>FIFA
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                ⚽ FIFA World Cup
             </div>
-            
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#inicio" class="nav-link active">Início</a></li>
-                    <li><a href="#estatisticas" class="nav-link">Estatísticas</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Anos ▼</a>
-                        <ul class="dropdown-menu" id="dropdown-anos">
-                            </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#historia">História da Copa</a></li>
+                <li><a href="#campeoes">Campeões</a></li>
+                <li><a href="#finais">Finais</a></li>
+                <li><a href="#estatisticas">Estatísticas</a></li>
+                <li><a href="#cartoes">Cartões</a></li>
+                <li><a href="#trofeus">Troféus</a></li>
+                <li><a href="#timeline">Linha do Tempo</a></li>
+            </ul>
+
+            <button class="menu-mobile">
+                ☰
+            </button>
+        </nav>
     </header>
 
-    <main class="main-content">
-        
-        <section id="inicio" class="content-section">
-            <h1>História da Copa do Mundo da FIFA</h1>
-            <p>A Copa do Mundo da FIFA, popularmente conhecida como Copa ou Mundial, é uma competição internacional de futebol entre seleções masculinas organizada pela Fédération Internationale de Football Association (FIFA). Ocorre a cada quatro anos, com exceção de 1942 e 1946, quando foi cancelada devido aos reflexos da Segunda Guerra Mundial.</p>
-            
-            <p>Instituída em 1928 sob a liderança do então presidente da FIFA, Jules Rimet, o torneio abriu as portas para a globalização do esporte mais popular do planeta. A primeira edição ocorreu em 1930 no Uruguai, país escolhido como sede por ser o atual bicampeão olímpico e celebrar o centenário de sua independência.</p>
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
 
-            <div class="history-grid">
-                <div class="history-card">
-                    <h3>Antes da Segunda Guerra</h3>
-                    <p>Devido ao sucesso do futebol nos Jogos Olímpicos, a FIFA decidiu criar um campeonato próprio. Na edição inaugural em 1930, apenas 13 seleções participaram, e os donos da casa (Uruguai) sagraram-se os primeiros campeões mundiais ao vencer a Argentina.</p>
-                </div>
-                <div class="history-card">
-                    <h3>O Pós-Guerra e o Maracanaço</h3>
-                    <p>Em 1950, o torneio retornou em solo brasileiro. Foi marcado pelo retorno da Inglaterra à FIFA e pelo histórico "Maracanaço", onde o Uruguai surpreendeu o mundo ao vencer o Brasil por 2 a 1 na última partida dentro de um Maracanã lotado.</p>
-                </div>
-                <div class="history-card">
-                    <h3>Era das Expansões</h3>
-                    <p>Visando dar mais oportunidades para seleções da África, Ásia e América do Norte, o torneio expandiu para 24 equipes em 1982 e para 32 em 1998. A partir de 2026, a competição assume um formato robusto com 48 seleções nacionais.</p>
-                </div>
+    <section id="inicio" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+                <h1>Copa do Mundo FIFA (1930–2022)</h1>
+
+                <p>
+                    A história completa do maior torneio de futebol do planeta.
+                </p>
+
+                <a href="#historia" class="btn-primary">
+                    Explorar História
+                </a>
             </div>
 
-            <blockquote class="trophy-box">
-                <strong>A Evolução do Troféu:</strong> De 1930 a 1970, os campeões erguiam a Taça Jules Rimet. O Brasil conquistou o direito de guardá-la em definitivo após o tricampeonato em 1970, mas o troféu foi roubado em 1983. Desde 1974, utiliza-se a atual Taça da Copa do Mundo, feita de ouro maciço de 18 quilates, desenhada por Silvio Gazzaniga, que permanece sob posse definitiva da FIFA.
-            </blockquote>
-        </section>
+            <div class="hero-image">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/d1/FIFA_World_Cup_Trophy_%28Jules_Rimet_Cup%29.png"
+                    alt="Taça da Copa do Mundo">
+            </div>
 
-        <section id="estatisticas" class="content-section">
-            <h2>Resumo Estatístico das Edições (1930–2022)</h2>
-            <p class="table-note">*Nota: Cartões amarelos e vermelhos físicos só foram introduzidos em 1970. Antes disso, as expulsões eram comunicadas verbalmente pelo árbitro.</p>
-            
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="counter-card">
+                <span class="counter" data-target="22">0</span>
+                <p>Copas Realizadas</p>
+            </div>
+
+            <div class="counter-card">
+                <span class="counter" data-target="8">0</span>
+                <p>Países Campeões</p>
+            </div>
+
+            <div class="counter-card">
+                <span class="counter" data-target="2500">0</span>
+                <p>Gols Marcados</p>
+            </div>
+
+            <div class="counter-card">
+                <span class="counter" data-target="84">0</span>
+                <p>Seleções Participantes</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- HISTÓRIA -->
+    <!-- ========================= -->
+
+    <section id="historia" class="section">
+
+        <div class="container">
+
+            <h2>História da Copa do Mundo</h2>
+
+            <div class="timeline-vertical">
+
+                <div class="timeline-item">
+                    <h3>1928</h3>
+                    <p>Criação da Copa do Mundo pela FIFA.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Jules Rimet</h3>
+                    <p>Idealizador do maior torneio do futebol mundial.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>1930</h3>
+                    <p>Primeira Copa do Mundo realizada no Uruguai.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>1942 e 1946</h3>
+                    <p>Competições canceladas pela Segunda Guerra Mundial.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>1950</h3>
+                    <p>Retorno da Copa no Brasil.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Era Pelé</h3>
+                    <p>Brasil conquista três títulos mundiais.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>1982</h3>
+                    <p>Expansão para 24 seleções.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>1998</h3>
+                    <p>Expansão para 32 seleções.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>2026</h3>
+                    <p>Expansão para 48 seleções.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>1970</h3>
+                    <p>Introdução dos cartões amarelos e vermelhos.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>2018</h3>
+                    <p>Introdução oficial do VAR.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- CAMPEÕES -->
+    <!-- ========================= -->
+
+    <section id="campeoes" class="section">
+
+        <div class="container">
+
+            <h2>Campeões e Vice-Campeões</h2>
+
+            <div class="filters">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Pesquisar edição...">
+
+                <select id="championFilter">
+                    <option value="">Todos os Campeões</option>
+                </select>
+
+                <button id="sortYear">
+                    Ordenar Ano
+                </button>
+
+            </div>
+
             <div class="table-container">
-                <table id="tabela-estatisticas">
+
+                <table id="worldCupTable">
+
                     <thead>
-                        <tr>
-                            <th>Ano</th>
-                            <th>Sede</th>
-                            <th>Campeão</th>
-                            <th>Vice-Campeão</th>
-                            <th>Gols</th>
-                            <th>Cartões Amarelos</th>
-                            <th>Cartões Vermelhos</th>
-                        </tr>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Sede</th>
+                        <th>Campeão</th>
+                        <th>Vice</th>
+                        <th>Final</th>
+                        <th>3º Lugar</th>
+                        <th>4º Lugar</th>
+                    </tr>
                     </thead>
-                    <tbody>
-                        </tbody>
+
+                    <tbody id="tableBody">
+                        <!-- preenchido via JS -->
+                    </tbody>
+
                 </table>
+
             </div>
-        </section>
 
-        <section id="edicoes-detalhadas" class="content-section">
-            <h2>Histórico Detalhado das Finais</h2>
-            <div id="container-finais">
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FINAIS -->
+    <!-- ========================= -->
+
+    <section id="finais" class="section">
+
+        <div class="container">
+
+            <h2>Finais Detalhadas</h2>
+
+            <div id="finalsContainer" class="cards-grid">
+                <!-- JS -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- ESTATÍSTICAS -->
+    <!-- ========================= -->
+
+    <section id="estatisticas" class="section">
+
+        <div class="container">
+
+            <h2>Estatísticas das Copas</h2>
+
+            <div class="charts-grid">
+
+                <div class="chart-card">
+                    <h3>Gols por Edição</h3>
+                    <canvas id="goalsChart"></canvas>
                 </div>
-        </section>
 
-    </main>
+                <div class="chart-card">
+                    <h3>Cartões Amarelos</h3>
+                    <canvas id="yellowChart"></canvas>
+                </div>
 
-    <footer class="site-footer">
-        <p>&copy; 2026 Almanaque Histórico das Copas do Mundo. Desenvolvido com HTML, CSS e JavaScript.</p>
+                <div class="chart-card">
+                    <h3>Cartões Vermelhos</h3>
+                    <canvas id="redChart"></canvas>
+                </div>
+
+                <div class="chart-card">
+                    <h3>Seleções Participantes</h3>
+                    <canvas id="teamsChart"></canvas>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- CARTÕES -->
+    <!-- ========================= -->
+
+    <section id="cartoes" class="section">
+
+        <div class="container">
+
+            <h2>Cartões e Disciplina</h2>
+
+            <div class="discipline-highlight">
+
+                <h3>Batalha de Nuremberg (2006)</h3>
+
+                <p>
+                    Portugal x Holanda
+                </p>
+
+                <ul>
+                    <li>16 Cartões Amarelos</li>
+                    <li>4 Cartões Vermelhos</li>
+                </ul>
+
+            </div>
+
+            <div class="ranking-table">
+
+                <table>
+
+                    <thead>
+                    <tr>
+                        <th>Seleção</th>
+                        <th>Amarelos</th>
+                        <th>Vermelhos</th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="disciplineTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- TROFÉUS -->
+    <!-- ========================= -->
+
+    <section id="trofeus" class="section">
+
+        <div class="container">
+
+            <h2>Troféus da Copa do Mundo</h2>
+
+            <div class="trophies-grid">
+
+                <div class="trophy-card">
+
+                    <h3>Taça Jules Rimet</h3>
+
+                    <ul>
+                        <li>1930–1970</li>
+                        <li>Brasil ficou definitivamente com ela</li>
+                        <li>Roubada em 1983</li>
+                    </ul>
+
+                </div>
+
+                <div class="trophy-card">
+
+                    <h3>Taça FIFA Atual</h3>
+
+                    <ul>
+                        <li>Criada em 1974</li>
+                        <li>Designer: Silvio Gazzaniga</li>
+                        <li>Ouro 18 quilates</li>
+                        <li>36,8 cm</li>
+                        <li>6,175 kg</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- MAIORES CAMPEÕES -->
+    <!-- ========================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <h2>Maiores Campeões</h2>
+
+            <div id="championsCards" class="cards-grid">
+                <!-- JS -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- TIMELINE -->
+    <!-- ========================= -->
+
+    <section id="timeline" class="section">
+
+        <div class="container">
+
+            <h2>Linha do Tempo Interativa</h2>
+
+            <div id="timelineYears" class="timeline-horizontal">
+                <!-- JS -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- MODAL -->
+    <!-- ========================= -->
+
+    <div id="timelineModal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="closeModal" class="close">
+                &times;
+            </span>
+
+            <div id="modalBody">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <h3>Copa do Mundo FIFA (1930–2022)</h3>
+
+            <p>
+                Portal histórico completo da maior competição de futebol do planeta.
+            </p>
+
+        </div>
+
     </footer>
 
-    <script href="copa.js" src="copa.js"></script>
+    <!-- ========================= -->
+    <!-- BOTÃO TOPO -->
+    <!-- ========================= -->
+
+    <button id="backToTop">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
